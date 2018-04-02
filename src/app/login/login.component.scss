@@ -1,0 +1,14 @@
+section {
+  max-width: 500px;
+  margin: 100px auto 0;
+  form {
+    display: flex;
+    flex-flow: column;
+    input {
+      margin-bottom: 15px;
+    }
+    button {
+        max-width: 100px;
+    }
+  }
+}

@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "angular-cli": {},
-  "repository":{
-    "type":"git",
+  "repository": {
+    "type": "git",
     "url": "https://github.com/cometodie/client-socket-chat.git"
   },
   "scripts": {
@@ -30,6 +30,9 @@
     "@auth0/angular-jwt": "^1.1.0",
     "@types/socket.io-client": "^1.4.32",
     "core-js": "^2.5.3",
+    "font-awesome": "^4.7.0",
+    "ngx-scroll-event": "^1.0.8",
+    "primeng": "^5.2.4",
     "rxjs": "^5.5.6",
     "socket.io": "^2.0.4",
     "ts-helpers": "^1.1.2",

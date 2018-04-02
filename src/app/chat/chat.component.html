@@ -1,6 +1,6 @@
 <section>
-  <div class="wrapper">
-    <div class="messages-container">
+  <div class="wrapper" #wrapper>
+    <div class="messages-container" [@listAnimation]="messages.length">
       <div *ngFor="let message of messages" class="msg" [ngClass]="{'left': message.userId !== user._id, 'right': message.userId == user._id}">
         <!-- {{message.date| date: 'M/d/yy'}}  -->
         <div class="msg-text" *ngIf="message.userId !== user._id">{{message.text}}</div>
@@ -11,7 +11,7 @@
     </div>
   </div>
   <div class="send-container">
-    <input #chatInput (keyup.enter)="sendMessage()" [(ngModel)]="message" />
-    <button (click)="sendMessage()">Send</button>
+    <input type="text" pInputText #chatInput (keyup.enter)="sendMessage()" [(ngModel)]="message" />
+    <button pButton type="button" label="Send" (click)="sendMessage()"></button>
   </div>
 </section>

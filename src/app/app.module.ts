@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { ChatService } from './shared/chat.service';
 
 import { ClientRoutingModule } from './app-routing.module';
-
 import { ChatComponent } from './chat/chat.component';
 import { HomeComponent } from './home/home.component';
 import { RouterModule, Route } from '@angular/router';
@@ -17,15 +16,21 @@ import { LoginService } from './services/login/login.service';
 import { LoginComponent } from './login/login.component';
 import { TokenInterceptor } from './services/tokenIntercepter/token-interceptor';
 import { JwtModule } from '@auth0/angular-jwt';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { InputTextModule } from 'primeng/inputtext';
+import { ButtonModule } from 'primeng/button';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, LoginComponent, ChatComponent],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     HttpModule,
     ClientRoutingModule,
     HttpClientModule,
+    InputTextModule,
+    ButtonModule,
     JwtModule.forRoot({
       config: {
         tokenGetter: () => {
