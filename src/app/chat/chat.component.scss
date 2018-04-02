@@ -1,0 +1,42 @@
+section {
+  max-width: 340px;
+  margin: 0 auto;
+  background: url('https://static-cdn.jtvnw.net/jtv_user_pictures/gladiatorpwnz-profile_image-69634ab3bc5edbd1-300x300.jpeg');
+  background-size: contain;
+  .wrapper {
+    max-height: 360px;
+    min-height: 360px;
+    overflow-y: scroll;
+  }
+  .messages-container {
+    display: flex;
+    flex-flow: column;
+    .msg {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      .msg-text {
+        padding: 5px 10px;
+        background: rgba($color: blue, $alpha: 0.6);
+        color: #fff;
+        margin: 10px;
+        border-radius: 5px;
+      }
+      .msg-time {
+        color: #fff;
+      }
+    }
+    .right {
+      align-self: flex-end;
+    }
+    .left {
+      align-self: flex-start;
+    }
+  }
+  .send-container {
+    display: flex;
+    input {
+      flex: 3;
+    }
+  }
+}

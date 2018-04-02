@@ -1,0 +1,55 @@
+{
+  "name": "client",
+  "version": "0.0.0",
+  "license": "MIT",
+  "angular-cli": {},
+  "repository":{
+    "type":"git",
+    "url": "https://github.com/cometodie/client-socket-chat.git"
+  },
+  "scripts": {
+    "start": "ng serve",
+    "lint": "tslint \"src/**/*.ts\"",
+    "test": "ng test",
+    "pree2e": "webdriver-manager update",
+    "e2e": "protractor"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^5.2.8",
+    "@angular/common": "^5.2.8",
+    "@angular/compiler": "^5.2.8",
+    "@angular/compiler-cli": "^5.2.8",
+    "@angular/core": "^5.2.8",
+    "@angular/forms": "^5.2.8",
+    "@angular/http": "^5.2.8",
+    "@angular/platform-browser": "^5.2.8",
+    "@angular/platform-browser-dynamic": "^5.2.8",
+    "@angular/platform-server": "^5.2.8",
+    "@angular/router": "^5.2.8",
+    "@auth0/angular-jwt": "^1.1.0",
+    "@types/socket.io-client": "^1.4.32",
+    "core-js": "^2.5.3",
+    "rxjs": "^5.5.6",
+    "socket.io": "^2.0.4",
+    "ts-helpers": "^1.1.2",
+    "webpack": "^3.11.0",
+    "zone.js": "^0.8.20"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^2.8.6",
+    "@angular/cli": "^1.7.3",
+    "codelyzer": "^4.2.1",
+    "jasmine-core": "^3.1.0",
+    "jasmine-spec-reporter": "^4.2.1",
+    "karma": "^2.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-cli": "^1.0.1",
+    "karma-jasmine": "^1.1.1",
+    "karma-remap-istanbul": "^0.6.0",
+    "protractor": "^5.3.0",
+    "ts-node": "^5.0.1",
+    "tslint": "^5.9.1",
+    "typescript": "~2.6.2"
+  }
+}
